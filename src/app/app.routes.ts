@@ -4,6 +4,6 @@ import { Registrar } from './loginModule/components/registrar/registrar';
 
 export const routes: Routes = [
   { path: 'login', component: Login },
-  { path: 'registrar', component: Registrar },
+  { path: 'register', component: Registrar },
   { path: '', redirectTo: 'login', pathMatch: 'full' }, // redireciona raiz para login
 ];

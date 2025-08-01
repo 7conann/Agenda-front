@@ -2,7 +2,6 @@
   <div class="login-card">
     <form (submit)="login()" class="login-form">
       <h2>Bem-vindo</h2>
-      <a routerLink="/registrar">Registrar</a>
       <label>
         ID
         <input type="text" [(ngModel)]="organizationId" name="orgId" required />
@@ -25,7 +24,7 @@
       <button type="submit" class="btn-login">LOGIN</button>
 
       <p class="register">
-        Não tem uma conta? <a href="#">Registre-se</a>
+        Não tem uma conta? <a (click)="goToRegister()">Registre-se</a>
       </p>
 
     </form>
@@ -47,4 +46,3 @@
 
 
 </div>
-

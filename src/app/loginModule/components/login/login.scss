@@ -1,21 +1,16 @@
 
 
 .login-container {
-  /* ✅ CORREÇÃO 1: url correta sem parênteses extras */
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('https://i.pinimg.com/originals/8a/ed/07/8aed075b2259a6f2bace5c4924ceb0a3.jpg');
-
-  /* Centralização do conteúdo */
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url('https://i.pinimg.com/originals/8a/ed/07/8aed075b2259a6f2bace5c4924ceb0a3.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 100vh;
   width: 100%;
 
 
-  /* ✅ Faz a imagem preencher toda a tela corretamente */
   background-size: cover;
   background-position: center;
 }
@@ -93,7 +88,7 @@ footer {
   left: 0;
   width: 100%;
 
-  
+
   color: white;
   font-family: Arial, sans-serif;
   font-size: 13px;
@@ -101,7 +96,7 @@ footer {
 }
 
 footer .container {
-  display: flex; /* ESSENCIAL! */
+  display: flex;
   justify-content: space-between;
   align-items: center;
 

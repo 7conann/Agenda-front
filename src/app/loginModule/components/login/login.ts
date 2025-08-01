@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,13 @@ export class Login {
   organizationId = '';
   username = '';
   password = '';
+  constructor(private router:Router) {
 
+  }
+
+  goToRegister() {
+    this.router.navigate(['/register']);
+  }
   login() {
     console.log('Login info:', {
       organizationId: this.organizationId,

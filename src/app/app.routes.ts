@@ -1,13 +1,9 @@
 import { Routes } from '@angular/router';
+import { Login } from './loginModule/components/login/login';
+import { Registrar } from './loginModule/components/registrar/registrar';
 
 export const routes: Routes = [
-  {
-    path: 'login',
-    loadComponent: () => import('./loginModule/components/login/login').then(m => m.Login)
-  },
-  {
-    path: '',
-    redirectTo: 'login',
-    pathMatch: 'full'
-  }
+  { path: 'login', component: Login },
+  { path: 'registrar', component: Registrar },
+  { path: '', redirectTo: 'login', pathMatch: 'full' }, // redireciona raiz para login
 ];

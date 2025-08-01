@@ -1,14 +1,24 @@
-/* Tela cheia com imagem de fundo */
 .container {
-  height: 100vh;
-  width: 100%;
-  background: url('') no-repeat center center/cover;
+  /* ✅ CORREÇÃO 1: url correta sem parênteses extras */
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://i.pinimg.com/originals/8a/ed/07/8aed075b2259a6f2bace5c4924ceb0a3.jpg');
+
+  /* Centralização do conteúdo */
   display: flex;
   justify-content: center;
   align-items: center;
+
+  height: 100vh;
+  width: 100%;
+
+
+  /* ✅ Faz a imagem preencher toda a tela corretamente */
+  background-size: cover;
+  background-position: center;
+/* Card central */
 }
 
-/* Card central */
 .form-box {
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.15);

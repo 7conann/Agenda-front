@@ -1,36 +1,50 @@
 <div class="login-container">
   <div class="login-card">
     <form (submit)="login()" class="login-form">
-      <h2>Welcome back</h2>
-
+      <h2>Bem-vindo</h2>
+      <a routerLink="/registrar">Registrar</a>
       <label>
-        Organisation ID
+        ID
         <input type="text" [(ngModel)]="organizationId" name="orgId" required />
       </label>
 
       <label>
-        Username
+        Usuário
         <input type="text" [(ngModel)]="username" name="username" required />
       </label>
 
       <label>
-        Password
+        Senha
         <input type="password" [(ngModel)]="password" name="password" required />
       </label>
 
       <div class="actions">
-        <a href="#" class="forgot">Forgot Your Password</a>
+        <a href="#" class="forgot">Esqueceu sua senha?</a>
       </div>
 
-      <button type="submit" class="btn-login">LOG IN</button>
+      <button type="submit" class="btn-login">LOGIN</button>
 
       <p class="register">
-        Don't have an account? <a href="#">Register as a owner</a>
+        Não tem uma conta? <a href="#">Registre-se</a>
       </p>
+
     </form>
 
-    <div class="visual-panel">
-      <img src="https://via.placeholder.com/400x300" alt="Dashboard preview" />
-    </div>
   </div>
+  <footer>
+    <div class="container">
+      <div class="footer-left">
+        <a href="#">CONTACT US</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-right">
+        <span>© 2020, Designed by </span>
+        <a href="#" class="highlight">ThemeMakker</a>
+      </div>
+    </div>
+  </footer>
+
+
 </div>
+

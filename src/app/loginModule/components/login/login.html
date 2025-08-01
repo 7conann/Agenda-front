@@ -1,1 +1,36 @@
-<p class="titulo">login works!</p>
+<div class="login-container">
+  <div class="login-card">
+    <form (submit)="login()" class="login-form">
+      <h2>Welcome back</h2>
+
+      <label>
+        Organisation ID
+        <input type="text" [(ngModel)]="organizationId" name="orgId" required />
+      </label>
+
+      <label>
+        Username
+        <input type="text" [(ngModel)]="username" name="username" required />
+      </label>
+
+      <label>
+        Password
+        <input type="password" [(ngModel)]="password" name="password" required />
+      </label>
+
+      <div class="actions">
+        <a href="#" class="forgot">Forgot Your Password</a>
+      </div>
+
+      <button type="submit" class="btn-login">LOG IN</button>
+
+      <p class="register">
+        Don't have an account? <a href="#">Register as a owner</a>
+      </p>
+    </form>
+
+    <div class="visual-panel">
+      <img src="https://via.placeholder.com/400x300" alt="Dashboard preview" />
+    </div>
+  </div>
+</div>

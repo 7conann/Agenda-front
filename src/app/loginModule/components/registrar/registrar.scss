@@ -1,0 +1,85 @@
+/* Tela cheia com imagem de fundo */
+.container {
+  height: 100vh;
+  width: 100%;
+  background: url('') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card central */
+.form-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Título e ícone */
+.icon-top img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+/* Campo com ícone */
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 16px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Botão */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #a855f7;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #9333ea;
+}
+
+/* Link */
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #c084fc;
+  text-decoration: none;
+}
